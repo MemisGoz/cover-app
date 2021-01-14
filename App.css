@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* body stylling  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(51,153,255);
+background:  radial-gradient(circle, rgba(51,153,255,0.5553571770505077) 100%, rgba(255,255,255,1) 100%);
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  font: white;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  margin: 0 auto;
+  height: 0 auto;
+  
+}
+/* overskrift og tekst  */
+.fronttext {
+  margin-top: 20px;
+  position: relative;
+  
+}
+
+.overskrift{
+  position: relative;
+  margin-left: 36%;
+}
+
+.underskrift {
+  position: relative;
+  margin-left: 25%;
+}
+
+/* Contact.js */
+
+
+.form {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.form > button {
+  box-shadow: 2px 3px rgba(155, 155, 155, 0.517);
+  padding: 20px;
+  border: none;
+  background-color:#3399ff;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 1vh;
+}
+
+.form > button:hover {
+  background-color: rgb(0, 0, 196);
+}
+
+
+
+/* contact.js slut  */
+
+/* Køb knap  */
+
+.order {
+  height: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.orderknap {
+  
+  padding: 20px;
+  border: none;
+  box-shadow: 2px 3px rgba(155, 155, 155, 0.517);
+  background-color:#3399ff;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 30px;
+}
+
+.order > .orderknap:hover {
+  background-color: rgb(0, 0, 196);
+}
+
+
+
+/* -------------- cirkel animation styling -------------- */
+.imgcirkle {
+  max-width:100%;
+  display:block;
+  margin-top: 10px;
+}
+
+/* ----------- cirkel animation bruges keyframe til animation 12 sec i alt----------- */
+.animate [wobble='1'] {
+  position: relative;
+  animation: wobble 16s 1 ;
+  
+}
+
+@keyframes wobble {
+ 6.666%, 25%{
+    transform: rotate(0deg)
+  }
+  31.666%, 60% {
+    transform: rotate(127deg)
+  }
+  66.666%, 70% {
+    transform: rotate(0deg)
+  }
+  76.666%, 93% {
+    transform: rotate(-127deg)
+  }
+  99.666%, 100% {
+    transform: rotate(0deg)
+  }
+}
+
+
+
+/* -------------- social media styling -------------- */
+
+.socialmedia{
+  margin-top: 80px;
+  margin-left: 170px;
+}
